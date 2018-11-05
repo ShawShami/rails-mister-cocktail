@@ -17,7 +17,7 @@ class CocktailsController < ApplicationController
   end
 
   def index
-    @cocktails = Cocktail.all
+    @cocktail = Cocktail.all
   end
 
   private
