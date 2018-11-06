@@ -1,5 +1,15 @@
 <h1>Doses#new</h1>
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :ingredients %>
+<div>
+
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
   <%= f.button :submit %>
-  <%= end  %>
+
+<% end %>
+
+</div>
+
+
+
